@@ -1,0 +1,39 @@
+{
+  "name": "hardware-proyecto",
+  "version": "1.0.0",
+  "description": "este proyecto es el unico y ofical que le dare mucho esfuerzo y dedicacion para hacerlo y mejorar mis habilidades",
+  "main": "index.js",
+  "scripts": {
+    "start":"node app.js",
+    "test":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roberto3219/Proyecto.git"
+  },
+  "keywords": [
+    "Mano_Cima21"
+  ],
+  "author": "Roberto Alfredo  Llampa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roberto3219/Proyecto/issues"
+  },
+  "homepage": "https://github.com/roberto3219/Proyecto#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.19.1",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.0.1",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.2",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.0",
+    "sequelize": "^6.37.1"
+  }
+}
