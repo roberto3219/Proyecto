@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %> 
+<body class="body">
+    <%- include('../partials/header') %>
+<main class="main_home">
+    <div class="div_sesion_form">
+        <div class="div_title_saludo">
+            <h2 class="title_saludo">Hola! es bueno verte de nuevo</h2>
+        </div>
+        <form class="form_sesion" action="" method="post">
+        <h2>Iniciar Sesion</h2>
+        <p>¿Nueva cuenta?<a href="/users/register">Crear cuenta</a></p>
+        <label for="">Nombre de usuario / Correo Electronico</label>
+        <input type="text">
+        <label for="">Contraseña</label>
+        <input type="text">
+        <a href="">Mostrar Contraseña</a>
+        <button>Iniciar Sesion</button>
+        <a href="">¿Olvidaste tu contraseña?</a>
+    </form>
+</div>
+</main>    
+    <%- include('../partials/footer') %> 
+</body>
+</html>

@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('./partials/head') %> 
-<body class="body">
+<body class="body ">
     <%- include('./partials/header') %> 
-    <main>
+    <main class="main_home">
         <div class="carrusel_img_bar">
-            <img src="" alt="">
-            <ul>
-                <li><i class="fa-solid fa-circle"></i></li>
-                <li><i class="fa-solid fa-circle"></i></li>
-                <li><i class="fa-solid fa-circle"></i></li>
-                <li><i class="fa-solid fa-circle"></i></li>
-                <li><i class="fa-solid fa-circle"></i></li>
-            </ul>
+            <div class="slider_box">
+                <ul class="anuncio_img">
+                    <li id="img_1"> 
+                        <img class="img_anuncio_bar" src="/images/anuncio_bar_1.png" alt="anuncio_1">
+                    </li>
+                    <li id="img_2">
+                        <img class="img_anuncio_bar" src="/images/anuncio_bar_2.png" alt="anuncio_2">
+                    </li>
+                    <li id="img_3">
+                        <img class="img_anuncio_bar" src="/images/anuncio_bar_3.png" alt="anuncio_3">
+                    </li>
+                </ul>
+            </div>
         </div>
+        <ul class="point_enlace_icon">
+            <li><a class="icon_point_enlace" href="#img_1" ><li><i class="fa-solid fa-circle"></i></li></a></li>
+            <li><a class="icon_point_enlace" href="#img_2" ><li><i class="fa-solid fa-circle"></i></li></a></li>
+            <li><a class="icon_point_enlace" href="#img_3" ><li><i class="fa-solid fa-circle"></i></li></a></li>
+         </ul>
         <div class="recent_product">
         <h2>Lo mas reciente</h2>    
             <div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %> 
+<body class="body">
+    <%- include('../partials/header') %>
+<main class="main_home">
+    <div class="form_create_product">
+        <form action="" method="post" class="create_form">
+            <div class="partform_create">
+            <h2>Crear producto</h2>
+            <div class="div_group_create">
+            <label for="">Nombre del producto</label>
+            <input class="input_create"  type="text">
+            </div>
+            <div class="div_group_create">
+            <label for="">Precio</label>
+            <input class="input_create"  type="text">
+        </div>
+        <div class="div_group_create">
+            <label for="">Imagen del producto</label>
+            <input class="input_create"  type="file">
+        </div>
+        <div class="div_group_create">    
+            <label for="">Hardware</label>
+            <select class="input_create select_create"  name="select_hardware" > 
+                <% for(let i=0; i< hardware.length;i++){ %>
+                   <option value="<%=hardware[i].id_hardware %>"><%= hardware[i].name_hardware %></option>
+                <% } %> 
+            </select>
+        </div>
+        <div class="div_group_create">
+            <label for="">Descripcion</label>
+            <input class="input_create" type="text">
+        </div>
+        <button type="submit">Crear Producto</button>
+        </div>
+        <div class="hardware_product_form">
+            <h2 class="hardware_form_create">Hardware</h2>
+            <%  %>
+            <div class="div_group_create">
+            <label for="">Marca</label>
+            <select name="" id="">
+                <option value="">AMD</option>
+                <option value="">INTEL</option>
+            </select>
+            </div>
+            <%  %>  
+        </div>
+        </form>
+    </div>
+</main>
+    <%- include('../partials/footer') %> 
+    <script src="/js/create_product.js"></script>
+</body>
+</html>

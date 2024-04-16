@@ -6,15 +6,15 @@ const session = require("express-session")
 const cookieParser = require("cookie-parser")
 
 //Router
-
 let mainRouter = require("./src/routes/mainRouter") ;
-let productRouter;
-let cartRoutes;
-let userRoutes;
+let productRouter = require("./src/routes/productRouter");
+let cartRoutes = require("./src/routes/cartRouter");
+let userRoutes = require("./src/routes/userRouter");
 
 //Router API
-let productoRouter;
-let usuarioRouter;
+let productoRouter = require("./src/routes/Api/ApiproductRouter");
+let usuarioRouter = require("./src/routes/Api/ApiuserRouter");
+
 //Servidor
 
 let port = 3009;
@@ -37,14 +37,14 @@ app.set("view engine", "ejs")
 //Rutas
 
 app.use("/",mainRouter);
-/* app.use("/product",productRouter);
+app.use("/product",productRouter);
 app.use("/cart", cartRoutes);
-app.use("/users", userRoutes); */
+app.use("/users", userRoutes);
 
 //Ruta Apis
 
-/* app.use(productoRouter)
-app.use(usuarioRouter) */
+app.use(productoRouter)
+app.use(usuarioRouter)
 
 //Error 404
 
